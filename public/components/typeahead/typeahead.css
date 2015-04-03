@@ -79,7 +79,7 @@
   color: #444444;
   background-color: #ffffff;
   position: absolute;
-  z-index: 1020;
+  z-index: 1030;
   width: 100%;
 }
 .typeahead .typeahead-items .typeahead-item {

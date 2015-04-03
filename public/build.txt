@@ -64,7 +64,6 @@ bower_components/angular-route/angular-route.js
 bower_components/angular-bindonce/bindonce.js
 index.js
 utils/config_template.js
-components/filter_bar/lib/onlyDisabled.js
 directives/input_focus.js
 directives/config.js
 services/es.js
@@ -119,10 +118,10 @@ css!bower_components/gridster/dist/jquery.gridster
 bower_components/gridster/dist/jquery.gridster.js
 plugins/dashboard/directives/grid.js
 components/filter_manager/filter_manager.js
+utils/brush_event.js
 components/filter_bar/lib/dedupFilters.js
 components/filter_bar/lib/uniqFilters.js
 components/filter_bar/filter_bar_click_handler.js
-utils/brush_event.js
 plugins/dashboard/components/panel/lib/visualization.js
 plugins/dashboard/components/panel/lib/search.js
 plugins/dashboard/components/panel/lib/load_panel.js
@@ -182,6 +181,8 @@ plugins/settings/saved_object_registry.js
 plugins/dashboard/services/saved_dashboards.js
 css!plugins/dashboard/styles/main
 text!plugins/dashboard/index.html
+components/filter_bar/lib/onlyDisabled.js
+components/filter_bar/lib/watchFilters.js
 text!plugins/dashboard/partials/save_dashboard.html
 text!plugins/dashboard/partials/load_dashboard.html
 text!plugins/dashboard/partials/share.html
@@ -260,7 +261,7 @@ directives/css_truncate.js
 directives/field_name.js
 filters/unique.js
 text!plugins/discover/components/field_chooser/discover_field.html
-text!plugins/discover/components/field_chooser/discover_field_details.html
+text!plugins/discover/components/field_chooser/lib/detail_views/string.html
 plugins/discover/components/field_chooser/discover_field.js
 plugins/discover/components/field_chooser/field_chooser.js
 utils/datemath.js
@@ -452,6 +453,7 @@ plugins/settings/sections/indices/_field_types.js
 plugins/settings/sections/indices/_edit.js
 text!plugins/settings/sections/indices/index.html
 plugins/settings/sections/indices/index.js
+plugins/settings/sections/advanced/lib/get_val_type.js
 text!plugins/settings/sections/advanced/advanced_row.html
 plugins/settings/sections/advanced/advanced_row.js
 text!plugins/settings/sections/advanced/index.html
@@ -462,6 +464,7 @@ plugins/settings/sections/objects/_view.js
 text!plugins/settings/sections/objects/_objects.html
 plugins/settings/sections/objects/_objects.js
 bower_components/ace-builds/src-noconflict/ace.js
+bower_components/ace-builds/src-noconflict/mode-json.js
 bower_components/angular-ui-ace/ui-ace.js
 bower_components/angular-elastic/elastic.js
 directives/confirm_click.js
