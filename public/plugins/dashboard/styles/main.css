@@ -139,6 +139,10 @@ dashboard-grid {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
   white-space: nowrap;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 .gridster dashboard-panel .panel .panel-heading div.btn-group {
@@ -151,14 +155,15 @@ dashboard-grid {
 }
 .gridster dashboard-panel .panel .panel-heading .panel-title {
   font-size: inherit;
+  display: inline-block;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
-  -webkit-flex: 1 1 0;
-  -ms-flex: 1 1 0;
-  flex: 1 1 0;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 .gridster dashboard-panel .panel .panel-heading a {
   color: #444444;

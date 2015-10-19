@@ -7,31 +7,29 @@
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="styles/theme/elk.ico">
     <title>Kibana 4</title>
-    <link rel="stylesheet" href="styles/main.css?_b=6004">
+    <link rel="stylesheet" href="styles/main.css?_b=7562">
 
   </head>
   <body kibana ng-class="'application-' + activeApp.id">
 
-    <div class="row">
-      <div class="col-md-offset-4 col-md-4 page-header initial-load">
-        <center>
-          <img width="128" src="images/initial_load.gif">
-          <h1>
-            <strong>Kibana</strong>
-            <small id="cache-message">is loading. Give me a moment here. I'm loading a whole bunch of code. Don't worry, all this good stuff will be cached up for next time!</small>
-          </h1>
-        </center>
-      </div>
+    <div class="col-md-offset-4 col-md-4 page-header initial-load">
+      <center>
+        <img width="128" alt="Loading Kibana" src="images/initial_load.gif">
+        <h1>
+          <strong>Kibana</strong>
+          <small id="cache-message">is loading. Give me a moment here. I'm loading a whole bunch of code. Don't worry, all this good stuff will be cached up for next time!</small>
+        </h1>
+      </center>
     </div>
 
     <script>
-      window.KIBANA_VERSION='4.0.2';
-      window.KIBANA_BUILD_NUM='6004';
-      window.KIBANA_COMMIT_SHA='b2861167bf39066c91556fc03298c38b89ad28a3';
+      window.KIBANA_VERSION='4.1.2';
+      window.KIBANA_BUILD_NUM='7562';
+      window.KIBANA_COMMIT_SHA='34af16e285598b21b9449a3e57560c89b0d11eb8';
     </script>
 
-    <script src="bower_components/requirejs/require.js?_b=6004"></script>
-    <script src="require.config.js?_b=6004"></script>
+    <script src="bower_components/requirejs/require.js?_b=7562"></script>
+    <script src="require.config.js?_b=7562"></script>
     <script>
       var showCacheMessage = location.href.indexOf('?embed') < 0 && location.href.indexOf('&embed') < 0;
       if (!showCacheMessage) document.getElementById('cache-message').style.display = 'none';

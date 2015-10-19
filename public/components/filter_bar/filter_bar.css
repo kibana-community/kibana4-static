@@ -148,8 +148,8 @@ filter-bar .bar .filter:hover > .filter-description {
   overflow: hidden;
 }
 filter-bar .bar .filter > .filter-actions {
-  font-size: 1.3em;
-  line-height: 1.1em;
+  font-size: 1.1em;
+  line-height: 1.4em;
   position: absolute;
   padding: 4px 8px;
   top: 0;
@@ -159,15 +159,22 @@ filter-bar .bar .filter > .filter-actions {
   text-align: center;
   white-space: nowrap;
 }
-filter-bar .bar .filter > .filter-actions > .action {
+filter-bar .bar .filter > .filter-actions > * {
   border-right: 1px solid rgba(255, 255, 255, 0.4);
-  padding-right: 6px;
-  margin-right: 8px;
+  padding-right: 0;
+  margin-right: 5px;
 }
-filter-bar .bar .filter > .filter-actions > .action:last-child {
+filter-bar .bar .filter > .filter-actions > *:last-child {
   border-right: 0;
   padding-right: 0;
   margin-right: 0;
+}
+filter-bar .bar .filter > .filter-actions > * .unpinned {
+  zoom: 1;
+  filter: alpha(opacity=70);
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
 }
 filter-bar .bar .filter.negate {
   background-color: #c6675d;

@@ -80,3 +80,17 @@ doc-table {
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
 }
+doc-table .discover-table-datafield {
+  white-space: pre-wrap;
+}
+doc-table .loading {
+  opacity: 0.5;
+}
+doc-table .spinner {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  opacity: 0.5;
+}

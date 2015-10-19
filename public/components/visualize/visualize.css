@@ -106,6 +106,17 @@ visualize .visualize-chart.spy-visible {
 visualize .visualize-chart.spy-only {
   display: none;
 }
+visualize .loading {
+  opacity: 0.5;
+}
+visualize .spinner {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  opacity: 0.5;
+}
 .visualize-error {
   display: -webkit-box;
   display: -moz-box;
@@ -187,6 +198,9 @@ visualize-spy .visualize-show-spy-tab {
   width: 50px;
   background: #ffffff;
   text-align: center;
+}
+visualize-spy .visualize-show-spy-tab:hover {
+  background-color: #ecf0f1;
 }
 visualize-spy .visualize-show-spy i {
   padding: 0 10px;

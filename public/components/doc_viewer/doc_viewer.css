@@ -77,6 +77,7 @@ doc-viewer .doc-viewer-field {
 }
 doc-viewer .doc-viewer-value,
 doc-viewer .doc-viewer pre {
+  display: inline-block;
   word-break: break-all;
   word-wrap: break-word;
   white-space: pre-wrap;
@@ -85,6 +86,6 @@ doc-viewer .doc-viewer td,
 doc-viewer .doc-viewer pre {
   font-family: "Lucida Console", Monaco, monospace;
 }
-doc-viewer .doc-viewer .content {
+doc-viewer .doc-viewer-content {
   margin-top: 5px;
 }
