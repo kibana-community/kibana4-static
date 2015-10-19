@@ -83,7 +83,7 @@ kbn-settings-objects-view {
 .settings-nav {
   text-transform: capitalize;
 }
-li.kbn-settings-tab {
+li.kbn-settings-tab:first-letter {
   text-transform: capitalize;
 }
 kbn-settings-objects form {
@@ -105,9 +105,14 @@ kbn-settings-objects .action-bar label {
   font-size: 10px;
   font-weight: normal;
 }
-kbn-settings-objects .action-bar .delete-all {
+kbn-settings-objects .action-bar .btn {
   font-size: 10px;
   margin-left: 20px;
+}
+kbn-settings-objects .header .title,
+kbn-settings-objects .header .controls {
+  padding-right: 1em;
+  display: inline-block;
 }
 kbn-settings-advanced .table > tbody > tr > td {
   vertical-align: middle;
@@ -188,15 +193,18 @@ kbn-settings-objects-view .ace_editor {
   -ms-flex: 4 0 auto;
   flex: 4 0 auto;
 }
-kbn-settings-indices .fields th:first-child,
-kbn-settings-indices .fields td:first-child {
+kbn-settings-indices .fields table > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+kbn-settings-indices .fields th:last-child,
+kbn-settings-indices .fields td:last-child {
+  text-align: right;
+}
+kbn-settings-indices .indexed-fields th:first-child,
+kbn-settings-indices .indexed-fields td:first-child {
   width: 35%;
 }
 kbn-settings-indices .scripted-fields header {
   margin: 5px 0;
-  text-align: right;
-}
-kbn-settings-indices .scripted-fields th:last-child,
-kbn-settings-indices .scripted-fields td:last-child {
   text-align: right;
 }
