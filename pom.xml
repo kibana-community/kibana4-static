@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>kibana-community</groupId>
+    <artifactId>kibana4-static</artifactId>
+    <version>4.1.2-es-2.0-SNAPSHOT</version>
+    <name>Kibana 4 Static</name>
+    <description>A static HTML/JS version of Kibana 4 that can be served from a CDN</description>
+    <url>https://github.com/kibana-community/kibana4-static</url>
+
+    <distributionManagement>
+        <repository>
+            <id>maven.jenkins-ci.org</id>
+            <url>http://maven.jenkins-ci.org:8081/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+    <scm>
+      <connection>scm:git:ssh://github.com/kibana-community/kibana4-static.git</connection>
+      <developerConnection>scm:git:ssh://git@github.com/kibana-community/kibana4-static.git</developerConnection>
+      <url>https://github.com/kibana-community/kibana4-static</url>
+    </scm>
+
+    <repositories>
+        <repository>
+            <id>repo.jenkins-ci.org</id>
+            <url>http://repo.jenkins-ci.org/public/</url>
+        </repository>
+    </repositories>
+
+    <build>
+      <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+            <version>2.2.1</version>
+            <configuration>
+                <descriptors>
+                    <descriptor>src/main/assembly/zip.xml</descriptor>
+                </descriptors>
+            </configuration>
+        </plugin>
+      </plugins>
+    </build>
+</project>
